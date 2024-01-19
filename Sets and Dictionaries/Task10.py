@@ -1,4 +1,10 @@
 input_list = [1, 2, 2, 3, 4, 4, 5, 5]
-unique_elements = set(input_list)
+sett = set(input_list)
 
-print("Unique elements:", unique_elements)
+for i in sett:
+    cal = 0
+    for j in input_list:
+        if i == j:
+            cal+=1
+    if cal == 1:
+        print(i , end=" ")
